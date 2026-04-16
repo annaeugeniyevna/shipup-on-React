@@ -28,7 +28,7 @@ const Navbar = () => {
                 md:hidden`}>
             <ul className="md:flex gap-5">
                 <li className="flex items-center gap-1 mb-2">
-                    <span className="font-sans font-regular text-black text-base">Company</span>
+                    <a href="/"><span className="font-sans font-regular text-black text-base">Company</span></a>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </svg>
                 </li >  
                 <li className="flex items-center gap-1 mb-2">
-                    <span className="font-sans font-regular text-black text-base">Services</span>
+                    <a href="/"><span className="font-sans font-regular text-black text-base">Services</span></a>
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -54,16 +54,16 @@ const Navbar = () => {
                 </svg>
                 </li>
                 <li className="font-sans font-regular text-black text-base mb-2">
-                    Solution
+                    <a href="/">Solution</a>
                 </li>
                 <li className="font-sans font-regular text-black text-base mb-2">
-                    Industries
+                    <a href="/">Industries</a>
                 </li>
                 <li className="font-sans font-regular text-black text-base mb-2">
-                    Insights
+                    <a href="/">Insights</a>
                 </li>
                 <li className="font-sans font-regular text-black text-base mb-2">
-                    News And Media
+                    <a href="/">News And Media</a>
                 </li>
             </ul>
 
