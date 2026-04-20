@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {Menu, X} from 'lucide-react';
+import NavItem from './NavItem';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,32 +28,12 @@ const Navbar = () => {
                 ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}
                 md:hidden`}>
             <ul className="md:flex gap-5">
-                <li className="flex items-center gap-1 mb-2">
-                    <a href="/"><span className="font-sans font-regular text-black text-base">Company</span></a>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    className="text-muted w-5 h-5 {`transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`}"
-                >
-                    <path
-                        fill="currentColor"
-                        d="M7.41 8.58 12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42Z"
-                    />
-                </svg>
-                </li >  
-                <li className="flex items-center gap-1 mb-2">
-                    <a href="/"><span className="font-sans font-regular text-black text-base">Services</span></a>
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    className="text-muted w-5 h-5 {`transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`}"
-                >
-                    <path
-                        fill="currentColor"
-                        d="M7.41 8.58 12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42Z"
-                    />
-                </svg>
-                </li>
+                <NavItem title="Company">
+                    <p>Some text</p>
+                </NavItem>  
+                <NavItem title="Services">
+                    <p>Some text</p>
+                </NavItem>
                 <li className="font-sans font-regular text-black text-base mb-2">
                     <a href="/">Solution</a>
                 </li>
