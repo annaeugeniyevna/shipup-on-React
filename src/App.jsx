@@ -1,15 +1,15 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Services from './components/Services';
 
 function App() {
   return (
     <>
-    <div className="max-w-[1440px] mx-auto px-[5%]">
       <Navbar/>
       <main>
         <Hero/>
+        <Services/>
       </main>
-    </div>
     </>
   )
 }
