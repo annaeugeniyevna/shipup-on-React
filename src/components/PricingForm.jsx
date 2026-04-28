@@ -3,8 +3,10 @@ export default function PricingForm() {
         <form>
             <div className="flex flex-col justify-center gap-6
             bg-white shadow-xl rounded-2xl
-            p-7">
-            <fieldset className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto">
+            p-7
+            md:max-w-[390px]">
+            <fieldset className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto
+            md:min-w-[340px]">
                 <legend className="font-sans font-regular text-base text-light-gray px-2">Origin</legend>
                 <div className="flex items-center gap-3 py-3">
                     <svg
@@ -26,7 +28,8 @@ export default function PricingForm() {
                         font-regular text-xs"/>
                 </div>
             </fieldset>
-            <fieldset className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto">
+            <fieldset className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto
+            md:min-w-[340px]">
                 <legend className="font-sans font-regular text-base text-light-gray px-2">Destination</legend>
                     <div className="flex items-center gap-3 py-3">
                     <svg
@@ -48,7 +51,8 @@ export default function PricingForm() {
                         font-regular text-xs"/>
                     </div>
             </fieldset>
-            <fieldset className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto">
+            <fieldset className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto
+            md:min-w-[340px]">
                 <legend className="font-sans font-regular text-base text-light-gray px-2">Weight</legend>
                 <div className="flex items-center gap-3 py-3">
                     <svg
@@ -75,7 +79,8 @@ export default function PricingForm() {
                 bg-primary rounded-xl
                 w-fit
                 min-w-[270px]
-                py-6 px-25 mx-auto">
+                py-6 px-25 mx-auto
+                md:min-w-[340px] md:px-33">
                 Check Price
             </a>
             </div>
