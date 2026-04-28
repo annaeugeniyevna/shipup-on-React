@@ -8,14 +8,22 @@ const Navbar = () => {
     return (
         <header>
             <div className="max-w-[1440px] mx-auto px-[5%]">
-                <nav className="flex justify-between py-6">
+                <nav className="flex justify-between py-6 md:py-8">
                     {/* Logo */}
                     <a href="/"
-                    className="text-primary font-light text-xl">Ship<span className="text-secondary font-black text-xl">Up</span></a>
+                    className="text-primary font-light text-xl 
+                    md:text-2xl">Ship<span className="text-secondary font-black text-xl 
+                    md:text-2xl">Up</span></a>
 
                     {/* Burger menu */}
-                    <button className="block md:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
-                        {isOpen ? <X size={28}/> : <Menu size={28}/>}
+                    <button className="block lg:hidden z-50 " 
+                    onClick={() => setIsOpen(!isOpen)}>
+                        {isOpen ? (
+                            <X className="w-7 h-7 md:w-10 md:h-10"/>
+                         ) : (
+                            <Menu className="w-7 h-7 md:w-10 md:h-10"/>
+                         )
+                        }
                     </button>
 
                     {/* Mobile menu */}
@@ -27,24 +35,24 @@ const Navbar = () => {
                         shadow-2xl 
                         transition-all duration-300
                         ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}
-                        md:hidden`}>
-                    <ul className="md:flex gap-5">
+                        md:py-9 md:w-[300px] md:h-[500px]`}>
+                    <ul className="lg:flex gap-5">
                         <NavItem title="Company">
                             <p>Some text</p>
                         </NavItem>  
                         <NavItem title="Services">
                             <p>Some text</p>
                         </NavItem>
-                        <li className="font-sans font-regular text-black text-base mb-2">
+                        <li className="font-sans font-regular text-black text-base mb-2 md:text-lg md:mb-3">
                             <a href="/">Solution</a>
                         </li>
-                        <li className="font-sans font-regular text-black text-base mb-2">
+                        <li className="font-sans font-regular text-black text-base mb-2 md:text-lg md:mb-3">
                             <a href="/">Industries</a>
                         </li>
-                        <li className="font-sans font-regular text-black text-base mb-2">
+                        <li className="font-sans font-regular text-black text-base mb-2 md:text-lg md:mb-3">
                             <a href="/">Insights</a>
                         </li>
-                        <li className="font-sans font-regular text-black text-base mb-2">
+                        <li className="font-sans font-regular text-black text-base mb-2 md:text-lg">
                             <a href="/">News And Media</a>
                         </li>
                     </ul>
@@ -65,7 +73,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Desctop menu */}
-                    <div className="hidden md:flex items-center gap-10">
+                    <div className="hidden lg:flex items-center gap-10">
                     <ul className="flex gap-6">
                         <li className="flex items-center gap-1">
                             <span>Company</span>
