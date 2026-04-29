@@ -7,15 +7,17 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className="max-w-[1440px] mx-auto px-[5%] lg:px-[7%]">
-                <nav className="flex justify-between py-6 md:py-8 lg:pt-13 lg:pb-0">
+            <div className="max-w-[1440px] mx-auto px-[5%] lg:px-[6%]">
+                <nav className="flex justify-between py-6 relative z-[100]
+                md:py-8 
+                lg:pt-13 lg:pb-0">
                     {/* Logo */}
                     <a href="/"
-                    className="text-primary font-light text-xl 
-                    md:text-2xl lg:mt-2">Ship<span className="text-secondary font-black text-xl 
+                    className="cursor-pointer text-primary font-light text-xl
+                    md:text-2xl lg:mt-2">Ship<span className="text-secondary font-black text-xl cursor-pointer
                     md:text-2xl">Up</span></a>
                     {/* Burger menu */}
-                    <button className="block lg:hidden z-50 " 
+                    <button className="block lg:hidden z-50" 
                     onClick={() => setIsOpen(!isOpen)}>
                         {isOpen ? (
                             <X className="w-7 h-7 md:w-10 md:h-10"/>
@@ -117,6 +119,7 @@ const Navbar = () => {
                         ">Request Quote</a>
                     <a 
                         className="font-sans font-bold text-xs text-white text-center bg-primary
+                        cursor-pointer
                         w-fit
                         py-4 px-10
                         mx-auto

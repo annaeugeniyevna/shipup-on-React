@@ -12,10 +12,10 @@ const NavItem = ({ title, children }) => {
             <button 
             onClick={() => setIsOpen(!isOpen)} 
             onBlur={() => setTimeout(() => setIsOpen(false), 200)}
-            className="flex items-center gap-1 mb-2 transition-colors ">
+            className="flex items-center gap-1 mb-2 transition-colors cursor-pointer">
                 {title}
                     <img src={chevronIcon} alt="Arrow"
-                    className={`text-muted transition-transform duration-200
+                    className={`text-muted transition-transform duration-200 pointer-events-none
                         md:w-7 md:h-7 
                         ${isOpen ? 'rotate-180' : ''}`}/>
                 </button>
