@@ -7,11 +7,19 @@ const Footer = () => {
     return (
         <footer className="bg-primary pt-13">
             <div className="max-w-[1440px] mx-auto px-[5%]">
-                <a href="/"
-                    className="text-secondary font-light text-xl">Ship<span className="text-white font-bold text-xl">Up</span>
-                    </a>
-                    <p className="font-sans font-regular text-sm text-white leading-normal mt-5 mb-13">ShipUp delivers an unparalleled customer service through dedicated customer teams, engaged people working in an agile culture, and a global footprint</p>
-                    <div className="flex gap-12 mb-13">
+                <div className="flex gap-25">
+                    <div>
+                        <a href="/"
+                            className="text-secondary font-light text-xl
+                            md:text-2xl">
+                            Ship
+                            <span className="text-white font-bold text-xl
+                        md:text-2xl">Up</span>
+                        </a>
+                        <p className="font-sans font-regular text-sm text-white leading-normal mt-5 mb-13
+                        md:max-w-[220px] leading-relaxed">ShipUp delivers an unparalleled customer service through dedicated customer teams, engaged people working in an agile culture, and a global footprint</p>
+                    </div>
+                    <div className="flex gap-20 mb-13">
                         <div>
                             <h3 className="font-sans font-bold text-lg text-white mb-5">Explore</h3>
                             <ul className="flex flex-col gap-2">
@@ -28,6 +36,7 @@ const Footer = () => {
                                 <li><a href="/" className="font-sans font-regular text-sm text-white">Privacy</a></li>
                             </ul>
                         </div>
+                </div>
                     </div>
                     <div>
                         <h3 className="font-sans font-bold text-lg text-white mb-5">Social Media</h3>
