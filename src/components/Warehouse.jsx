@@ -18,8 +18,8 @@ const Warehouse = () => {
     return (
         <section className="bg-map-area pt-13 pb-20">
             <div className="max-w-[1440px] mx-auto px-[5%]">
-                <h2 className="font-sans font-regular text-2xl text-black text-center mb-20">
-                        <span className="font-sans font-bold text-2xl text-black mr-2 border-b-4 border-secondary pb-2">
+                <h2 className="font-sans font-regular text-2xl text-black text-center mb-20 md:text-4xl">
+                        <span className="font-sans font-bold text-2xl text-black mr-2 border-b-4 border-secondary pb-2 md:text-4xl">
                             Warehouse 
                         </span>
                         Onsite
@@ -44,7 +44,7 @@ const Warehouse = () => {
                         }}>
                             
                             <div className="relative flex items-center justify-center">
-                                <div className="absolute w-4 h-4 bg-red-500 rounded-full animate-ping opacity-40">
+                                <div className="absolute w-4 h-4 bg-red-500 rounded-full animate-ping opacity-40 md:w-7 md:h-7">
                                 </div>
                                 <div className="relative w-2 h-2 bg-red-500 rounded-full border border-white"></div>
                             </div>
@@ -68,18 +68,21 @@ const Warehouse = () => {
                     ))}
                 </div>
                     <div className="max-w-[1440px] mx-auto px-[5%]">
-                        <div className="flex flex-row justify-between mx-auto mt-10">
+                        <div className="flex flex-row justify-between mx-auto mt-10 md:max-w-[440px]
+                        md:gap-7">
                             <a href="/" 
                             className="font-sans font-bold text-xs text-primary text-center
                             py-4 px-9
                             border border-primary
-                            rounded-xl">Request Quote</a>
+                            rounded-xl
+                            md:text-lg md:py-5 md:px-13">Request Quote</a>
                             <a 
                             className="font-sans font-bold text-xs text-white text-center bg-primary
                             w-fit
                             py-4 px-13
                             mx-auto
-                            rounded-xl">Join Now</a>
+                            rounded-xl
+                            md:text-lg md:py-5 md:px-13">Join Now</a>
                         </div>
                     </div>
         </section>
