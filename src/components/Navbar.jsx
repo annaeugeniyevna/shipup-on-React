@@ -7,14 +7,13 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className="max-w-[1440px] mx-auto px-[5%]">
-                <nav className="flex justify-between py-6 md:py-8">
+            <div className="max-w-[1440px] mx-auto px-[5%] lg:px-[7%]">
+                <nav className="flex justify-between py-6 md:py-8 lg:pt-13 lg:pb-0">
                     {/* Logo */}
                     <a href="/"
                     className="text-primary font-light text-xl 
-                    md:text-2xl">Ship<span className="text-secondary font-black text-xl 
+                    md:text-2xl lg:mt-2">Ship<span className="text-secondary font-black text-xl 
                     md:text-2xl">Up</span></a>
-
                     {/* Burger menu */}
                     <button className="block lg:hidden z-50 " 
                     onClick={() => setIsOpen(!isOpen)}>
@@ -73,52 +72,57 @@ const Navbar = () => {
                     </div>
 
                     {/* Desctop menu */}
-                    <div className="hidden lg:flex items-center gap-10">
-                    <ul className="flex gap-6">
-                        <li className="flex items-center gap-1">
-                            <span>Company</span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            className="w-5 h-5 {`transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`}"
-                        >
-                            <path
-                                fill="currentColor"
-                                d="M7.41 8.58 12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42Z"
-                            />
-                        </svg>
-                        </li >  
-                        <li className="flex items-center gap-1">
-                            <span>Services</span>
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            className="w-5 h-5 {`transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`}"
-                        >
-                            <path
-                                fill="currentColor"
-                                d="M7.41 8.58 12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42Z"
-                            />
-                        </svg>
-                        </li>
+                    <div className="hidden lg:flex items-center gap-13">
+                    <ul className="flex gap-8">
+                        <NavItem title="Company">
+                            <p>Some text</p>
+                        </NavItem>  
+                        <NavItem title="Services">
+                            <p>Some text</p>
+                        </NavItem>
                         <li>
+                            <a href="/"
+                            className="font-sans font-regular text-sm text-black md:text-base">
                             Solution
+                            </a>
                         </li>
                         <li>
-                            Industries
+                            <a href="/"
+                            className="font-sans font-regular text-sm text-black md:text-base">
+                            Indasties
+                            </a>
                         </li>
                         <li>
+                            <a href="/"
+                            className="font-sans font-regular text-sm text-black md:text-base">
                             Insights
+                            </a>
                         </li>
                         <li>
-                            News And Media
+                            <a href="/"
+                            className="font-sans font-regular text-sm text-black md:text-base">
+                            News and Media
+                            </a>
                         </li>
                     </ul>
 
                     {/* Buttons for desctop*/}
-                    <div className="flex gap-4">
-                        <button>Request Quote</button>
-                        <button>Join Now</button>
+                    <div className="flex gap-7">
+                        <a href="/" 
+                        className="font-sans font-bold text-xs text-primary text-center
+                        py-4 px-9
+                        border border-primary
+                        rounded-xl
+                        lg:text-sm
+                        ">Request Quote</a>
+                    <a 
+                        className="font-sans font-bold text-xs text-white text-center bg-primary
+                        w-fit
+                        py-4 px-10
+                        mx-auto
+                        rounded-xl
+                        lg:text-sm
+                        ">Join Now</a>
                     </div>
                     </div>
                 </nav>
