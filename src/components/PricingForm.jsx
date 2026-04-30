@@ -1,15 +1,18 @@
 export default function PricingForm() {
     return (
         <form className="lg:flex lg:justify-center">
-            <div className="flex flex-col justify-center gap-6
+            <div 
+            className="flex flex-col justify-center gap-6
             bg-white shadow-xl rounded-2xl
             p-7
             md:max-w-[390px]
             lg:max-w-[1130px] lg:flex-row lg:items-center lg:gap-5 lg:pt-10 lg:pb-9 lg:px-8">
-            <fieldset className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto
+            <fieldset 
+            className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto
             md:min-w-[340px]
             lg:min-w-[250px] lg:mx-0">
-                <legend className="font-sans font-regular text-base text-light-gray px-2">Origin</legend>
+                <legend 
+                className="font-sans font-regular text-base text-light-gray px-2">Origin</legend>
                 <div className="flex items-center gap-3 py-3">
                     <svg
                         className="text-primary"
@@ -30,10 +33,12 @@ export default function PricingForm() {
                         font-regular text-xs"/>
                 </div>
             </fieldset>
-            <fieldset className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto
+            <fieldset 
+            className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto
             md:min-w-[340px]
             lg:min-w-[250px] lg:mx-0">
-                <legend className="font-sans font-regular text-base text-light-gray px-2">Destination</legend>
+                <legend 
+                className="font-sans font-regular text-base text-light-gray px-2">Destination</legend>
                     <div className="flex items-center gap-3 py-3">
                     <svg
                         className="text-primary"
@@ -54,10 +59,12 @@ export default function PricingForm() {
                         font-regular text-xs"/>
                     </div>
             </fieldset>
-            <fieldset className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto
+            <fieldset 
+            className="min-w-[270px] border border-light-gray rounded-xl px-4 pb-2 pt-1 mx-auto
             md:min-w-[340px]
             lg:min-w-[250px] lg:mx-0">
-                <legend className="font-sans font-regular text-base text-light-gray px-2">Weight</legend>
+                <legend c
+                lassName="font-sans font-regular text-base text-light-gray px-2">Weight</legend>
                 <div className="flex items-center gap-3 py-3">
                     <svg
                         className="text-light-gray"
@@ -81,7 +88,7 @@ export default function PricingForm() {
             <div>
                 <a href="/" 
                     className="font-sans font-bold text-xs text-white 
-                 bg-primary rounded-xl
+                    bg-primary rounded-xl
                     w-fit
                     min-w-[270px]
                     py-6 px-25 mx-auto
