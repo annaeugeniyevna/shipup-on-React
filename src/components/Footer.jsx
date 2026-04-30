@@ -7,7 +7,8 @@ const Footer = () => {
     return (
         <footer className="bg-primary pt-13">
             <div className="max-w-[1440px] mx-auto px-[5%]">
-                <div className="flex gap-25">
+                <div className="lg:flex lg:gap-42 lg:mb-13">
+                    <div className="flex gap-25 lg:gap-42">
                     <div>
                         <a href="/"
                             className="text-secondary font-light text-xl
@@ -19,7 +20,7 @@ const Footer = () => {
                         <p className="font-sans font-regular text-sm text-white leading-normal mt-5 mb-13
                         md:max-w-[220px] leading-relaxed">ShipUp delivers an unparalleled customer service through dedicated customer teams, engaged people working in an agile culture, and a global footprint</p>
                     </div>
-                    <div className="flex gap-20 mb-13">
+                    <div className="flex gap-20 mb-13 lg:gap-42">
                         <div>
                             <h3 className="font-sans font-bold text-lg text-white mb-5">Explore</h3>
                             <ul className="flex flex-col gap-2">
@@ -55,6 +56,7 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
+                </div>
                     <div className="border-t border-driver py-7 text-center">
                          <a href="/" className="font-sans text-2xl text-white">
                          <span className="font-light text-white">Ship</span>
