@@ -16,9 +16,11 @@ const Warehouse = () => {
     ];
 
     return (
-        <section className="bg-map-area pt-13 pb-20">
+        <section className="bg-map-area pt-13 pb-20 lg:pt-25 lg:pb-25">
             <div className="max-w-[1440px] mx-auto px-[5%]">
-                <h2 className="font-sans font-regular text-2xl text-black text-center mb-20 md:text-4xl">
+                <h2 className="font-sans font-regular text-2xl text-black text-center mb-20 
+                md:text-4xl
+                lg:mb-25">
                         <span className="font-sans font-bold text-2xl text-black mr-2 border-b-4 border-secondary pb-2 md:text-4xl">
                             Warehouse 
                         </span>
@@ -69,7 +71,8 @@ const Warehouse = () => {
                 </div>
                     <div className="max-w-[1440px] mx-auto px-[5%]">
                         <div className="flex flex-row justify-between mx-auto mt-10 md:max-w-[440px]
-                        md:gap-7">
+                        md:gap-7
+                        lg:mt-0">
                             <a href="/" 
                             className="font-sans font-bold text-xs text-primary text-center
                             py-4 px-9
