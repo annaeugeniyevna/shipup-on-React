@@ -6,9 +6,11 @@ const NavItem = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <li className="relative list-none
+        <li 
+        className="relative list-none
         font-sans font-regular text-base text-black
-        md:text-base md:mb-3 lg:mb-0">
+        md:text-base md:mb-3 
+        lg:mb-0">
             <button 
             onClick={() => setIsOpen(!isOpen)} 
             onBlur={() => setTimeout(() => setIsOpen(false), 200)}
@@ -20,7 +22,8 @@ const NavItem = ({ title, children }) => {
                         ${isOpen ? 'rotate-180' : ''}`}/>
                 </button>
                 {isOpen && (
-                    <div className="absolute top-full left-0 px-3 py-2 w-64 text-gray bg-white border-gray rounded-sm z-50
+                    <div 
+                    className="absolute top-full left-0 px-3 py-2 w-64 text-gray bg-white border-gray rounded-sm z-50
                     md:bg-off-white">
                         {children}
                     </div>
