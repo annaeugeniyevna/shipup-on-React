@@ -18,23 +18,35 @@ const Footer = () => {
                         md:text-2xl">Up</span>
                         </a>
                         <p className="font-sans font-regular text-sm text-white leading-normal mt-5 mb-13
-                        md:max-w-[220px] leading-relaxed">ShipUp delivers an unparalleled customer service through dedicated customer teams, engaged people working in an agile culture, and a global footprint</p>
+                        md:max-w-[220px] md:leading-relaxed">ShipUp delivers an unparalleled customer service through dedicated customer teams, engaged people working in an agile culture, and a global footprint</p>
                     </div>
                     <div className="flex gap-20 mb-13 lg:gap-42">
                         <div>
                             <h3 className="font-sans font-bold text-lg text-white mb-5">Explore</h3>
                             <ul className="flex flex-col gap-2">
-                                <li><a href="/" className="font-sans font-regular text-sm text-white">About Us</a></li>
-                                <li><a href="/" className="font-sans font-regular text-sm text-white">Our warehoueses</a></li>
-                                <li><a href="/" className="font-sans font-regular text-sm text-white">Blog</a></li>
-                                <li><a href="/" className="font-sans font-regular text-sm text-white">News and Media</a></li>
+                                <li>
+                                    <a href="/" className="font-sans font-regular text-sm text-white">About Us</a>
+                                    </li>
+                                <li>
+                                    <a href="/" className="font-sans font-regular text-sm text-white">Our warehoueses</a>
+                                    </li>
+                                <li>
+                                    <a href="/" className="font-sans font-regular text-sm text-white">Blog</a>
+                                    </li>
+                                <li>
+                                    <a href="/" className="font-sans font-regular text-sm text-white">News and Media</a>
+                                    </li>
                             </ul>
                         </div>
                         <div>
                             <h3 className="font-sans font-bold text-lg text-white mb-6">Legal</h3>
                             <ul className="flex flex-col gap-3">
-                                <li><a href="/" className="font-sans font-regular text-sm text-white">Terms</a></li>
-                                <li><a href="/" className="font-sans font-regular text-sm text-white">Privacy</a></li>
+                                <li>
+                                    <a href="/" className="font-sans font-regular text-sm text-white">Terms</a>
+                                    </li>
+                                <li>
+                                    <a href="/" className="font-sans font-regular text-sm text-white">Privacy</a>
+                                    </li>
                             </ul>
                         </div>
                 </div>
