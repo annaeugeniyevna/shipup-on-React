@@ -26,9 +26,11 @@ const Navbar = () => {
                     lg:hidden z-50" 
                     onClick={() => setIsOpen(!isOpen)}>
                         {isOpen ? (
-                            <X className="w-7 h-7 md:w-10 md:h-10"/>
+                            <X className="w-7 h-7 md:w-10 md:h-10"
+                            aria-label="Toggle menu"/>
                          ) : (
-                            <Menu className="w-7 h-7 md:w-10 md:h-10"/>
+                            <Menu className="w-7 h-7 md:w-10 md:h-10" 
+                            aria-label="Toggle menu"/>
                          )
                         }
                     </button>
