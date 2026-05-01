@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="bg-primary pt-13">
             <div className="max-w-[1440px] mx-auto px-[5%]">
                 <div className="lg:flex lg:gap-42 lg:mb-13">
-                    <div className="flex gap-25 lg:gap-42">
+                    <div className="flex flex-col md:flex-row md:gap-25 lg:gap-42">
                     <div>
                         <a href="/"
                             className="text-secondary font-light text-xl
@@ -49,8 +49,8 @@ const Footer = () => {
                                     </li>
                             </ul>
                         </div>
-                </div>
                     </div>
+                </div>
                     <div>
                         <h3 className="font-sans font-bold text-lg text-white mb-5">Social Media</h3>
                         <div className="flex gap-5 mb-15">

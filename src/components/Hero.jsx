@@ -48,7 +48,7 @@ const Hero = () => {
                                 className="flex items-center group">
                                     <img 
                                     src={cameraIcon} 
-                                    lt="Camera"/>
+                                    alt="Camera"/>
                                     <span 
                                     className="font-sans font-bold text-xs text-primary
                                     md:text-base
