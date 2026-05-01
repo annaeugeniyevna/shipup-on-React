@@ -38,7 +38,7 @@ const Hero = () => {
                             className="flex items-center
                             md:max-w-[360px] md:mx-auto
                             lg:gap-3 lg:mx-0">
-                                <a 
+                                <a href="/"
                                 className="font-sans font-bold text-xs text-white text-center bg-primary cursor-pointer
                                 py-5 px-12
                                 w-fit
