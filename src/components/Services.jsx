@@ -81,7 +81,7 @@ const Services = () => {
                         border border-primary
                         rounded-xl
                         md:text-lg md:py-6 md:px-13">Request Quote</a>
-                    <a 
+                    <a href="/"
                         className="font-sans font-bold text-xs text-white text-center bg-primary
                         w-fit
                         py-4 px-13
