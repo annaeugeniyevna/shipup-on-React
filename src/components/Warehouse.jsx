@@ -46,7 +46,6 @@ const Warehouse = () => {
                         className="absolute z-30 group cursor-pointer"
                         style={{ left: point.x, top: point.y}}
                         onClick={() => {
-                            console.log("Натиснули на точку:", point.id);
                         setActivePoint(activePoint === point.id ? null : point.id);
                         }}>
                             
