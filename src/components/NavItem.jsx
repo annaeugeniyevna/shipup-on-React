@@ -18,7 +18,7 @@ const NavItem = ({ title, children }) => {
                 {title}
                     <img src={chevronIcon} alt="Arrow"
                     className={`text-muted transition-transform duration-200 pointer-events-none
-                        md:w-7 md:h-7 
+                    md:w-7 md:h-7 
                         ${isOpen ? 'rotate-180' : ''}`}/>
                 </button>
                 {isOpen && (
