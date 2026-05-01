@@ -83,7 +83,7 @@ const Navbar = () => {
                         py-4 px-9
                         border border-primary
                         rounded-xl">Request Quote</a>
-                        <a 
+                        <a href="/"
                         className="font-sans font-bold text-base text-white text-center bg-primary
                         w-fit
                         py-4 px-9
@@ -144,7 +144,7 @@ const Navbar = () => {
                         rounded-xl
                         lg:text-sm
                         ">Request Quote</a>
-                    <a 
+                        <a href="/"
                         className="font-sans font-bold text-xs text-white text-center bg-primary
                         cursor-pointer
                         w-fit
