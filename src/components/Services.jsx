@@ -75,19 +75,23 @@ const Services = () => {
                 <div 
                 className="max-w-[440px] flex flex-row justify-between gap-7 mx-auto mt-20 
                 lg:mt-25">
-                    <a href="/" 
-                        className="font-sans font-bold text-xs text-primary text-center
-                        py-4 px-9
-                        border border-primary
-                        rounded-xl
-                        md:text-lg md:py-6 md:px-13">Request Quote</a>
-                    <a href="/"
-                        className="font-sans font-bold text-xs text-white text-center bg-primary
-                        w-fit
-                        py-4 px-13
-                        mx-auto
-                        rounded-xl
-                        md:text-lg md:py-6 md:px-13">Join Now</a>
+                    <div 
+                    className="flex gap-3
+                    md:gap-7">
+                        <a href="/" 
+                            className="font-sans font-bold text-xs text-primary text-center
+                            py-4 px-9
+                            border border-primary
+                            rounded-xl
+                            md:text-lg md:py-6 md:px-13">Request Quote</a>
+                        <a href="/"
+                            className="font-sans font-bold text-xs text-white text-center bg-primary
+                            w-fit
+                            py-4 px-13
+                            mx-auto
+                            rounded-xl
+                            md:text-lg md:py-6 md:px-13">Join Now</a>
+                    </div>
                 </div>
             </div>
         </section>
