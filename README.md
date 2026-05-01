@@ -1,16 +1,19 @@
-# React + Vite
+# ShipUp - Logistics Solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern, fast and responsive landing page for a logistics company.
 
-Currently, two official plugins are available:
+## Live Demo
+(https://shipup-on-react.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+* **Modern UI/UX** - Clean and professional design.
+* **Fully Responsive** - Optimized for mobile, tablet and desctop.
+* **Perfomance & SEO** - High Lighthouse scores, optimized meta tags and accessibility (ARIA labels).
+* **Branding** - Custom favicon system for all platforms (Android, iOS, Wed).
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech
+* **React** (Functional, Components, Hooks)
+* **Vite** (Build tool)
+* **Tailwind CSS** (Styling)
+* **Git/GitHub** (Version control)
+* **Vercel** (Deployment)
